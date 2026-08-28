@@ -36,3 +36,16 @@
 - [x] Adaptar o fluxo do Chat IA conforme referência do Forja
 - [x] Tornar preferências funcionais e persistentes
 - [x] Atualizar README, GitHub e link da nova release APK
+
+## Versão 1.2 — persistência, agenda e IA
+
+- [ ] Corrigir persistência local de perfil, agenda, preferências e treinos no armazenamento do aparelho
+- [ ] Persistir cada série, carga, repetição e sessão concluída
+- [ ] Permitir clicar em qualquer dia da semana e visualizar o treino daquele dia
+- [ ] Tornar o botão Ver agenda funcional
+- [ ] Implementar lembrete de treino com permissão e notificação local
+- [ ] Adicionar provedores ChatGPT, Groq, Manus IA, Gemini, Claude IA e DeepSeek
+- [ ] Permitir escolher modelos por provedor
+- [ ] Adicionar limpeza total dos dados locais nas Configurações
+- [ ] Criar testes para persistência, agenda e limpeza
+- [ ] Atualizar README, GitHub e link da nova release APK

@@ -1,0 +1,7 @@
+import * as Notifications from "expo-notifications";
+import { Platform } from "react-native";
+import type { ScheduledWorkout } from "./store";
+Notifications.setNotificationHandler({ handleNotification: async () => ({ shouldShowAlert: true, shouldPlaySound: true, shouldSetBadge: false, shouldShowBanner: true, shouldShowList: true }) });
+const PREFIX="trennix-weekly-";
+export async function setWorkoutReminders(schedule:ScheduledWorkout[],hour:number,minute:number){if(Platform.OS==="web")return false;if(Platform.OS==="android")await Notifications.setNotificationChannelAsync("workout-reminders",{name:"Lembretes de treino",importance:Notifications.AndroidImportance.DEFAULT,sound:"default"});const permission=await Notifications.requestPermissionsAsync();if(permission.status!=="granted")return false;await cancelWorkoutReminders();for(const item of schedule){const weekday=item.day===0?1:item.day+1;await Notifications.scheduleNotificationAsync({identifier:`${PREFIX}${item.day}`,content:{title:"Hora do TRENNIX",body:`Seu treino de ${item.title} está na agenda.`,data:{day:item.day}},trigger:{type:Notifications.SchedulableTriggerInputTypes.CALENDAR,weekday,hour,minute,repeats:true}})}return true}
+export async function cancelWorkoutReminders(){if(Platform.OS==="web")return;const scheduled=await Notifications.getAllScheduledNotificationsAsync();await Promise.all(scheduled.filter(item=>item.identifier.startsWith(PREFIX)).map(item=>Notifications.cancelScheduledNotificationAsync(item.identifier)))}

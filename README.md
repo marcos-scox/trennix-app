@@ -12,19 +12,19 @@ A **Agenda** usa o dia real do aparelho para destacar o dia atual e mostra os ex
 
 ## Perfil e preferências
 
-Em **Configurações**, o cartão de conta foi removido. O usuário pode editar nome, idade, altura, peso e selecionar uma foto da galeria. Unidades, idioma e lembretes são preferências locais persistentes. O perfil, a agenda e as preferências ficam no aparelho e começam vazios.
+Em **Configurações**, o cartão de conta foi removido. O usuário pode editar nome, idade, altura, peso e selecionar uma foto da galeria. Unidades, idioma e lembretes são preferências locais persistentes. O perfil, a agenda, as preferências e as sessões ficam no aparelho, em arquivo local persistente dentro do armazenamento privado do aplicativo, e começam vazios. O botão **Limpar todos os dados** remove esse arquivo, a chave da IA e os lembretes agendados.
 
 ## Chat IA
 
-Para usar o **Chat IA**, abra Configurações, cole sua chave Groq e salve. A chave é armazenada no Android usando o armazenamento seguro do sistema; ela não é enviada para o repositório GitHub. O chat usa o modelo compatível `llama-3.3-70b-versatile` e envia ao treinador apenas a pergunta e um contexto básico do perfil e da agenda. Sem chave, o aplicativo informa como configurar a IA.
+Para usar o **Chat IA**, abra Configurações, escolha um provedor, selecione um modelo e cole a chave correspondente. O TRENNIX suporta **ChatGPT, Groq, Manus IA, Gemini, Claude IA e DeepSeek**. A chave é armazenada no Android usando o armazenamento seguro do sistema; ela não é enviada para o repositório GitHub. O chat envia ao treinador apenas a pergunta e um contexto básico do perfil e da agenda. Sem chave, o aplicativo informa como configurar a IA.
 
 ## Baixar APK Android
 
 A versão atual está disponível na release:
 
-[**Baixar TRENNIX v1.1.0 — APK Android**](https://github.com/marcos-scox/trennix-app/releases/download/v1.1.0/TRENNIX-v1.1.0.apk)
+[**Baixar TRENNIX v1.2.0 — APK Android**](https://github.com/marcos-scox/trennix-app/releases/download/v1.2.0/TRENNIX-v1.2.0.apk)
 
-Também é possível abrir a [página da release v1.1.0](https://github.com/marcos-scox/trennix-app/releases/tag/v1.1.0). Para versões futuras, abra **Actions**, selecione **Gerar APK Android nativo**, clique em **Run workflow** e informe uma nova tag. O workflow valida TypeScript e testes, gera o projeto Android e anexa o APK à release.
+Também é possível abrir a [página da release v1.2.0](https://github.com/marcos-scox/trennix-app/releases/tag/v1.2.0). Para versões futuras, abra **Actions**, selecione **Gerar APK Android nativo**, clique em **Run workflow** e informe uma nova tag. O workflow valida TypeScript e testes, gera o projeto Android e anexa o APK à release.
 
 > Para instalar um APK fora da Play Store, o Android pode solicitar autorização para instalar aplicativos de fontes desconhecidas.
 
