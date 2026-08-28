@@ -18,8 +18,8 @@
 - [x] Preparar workflow do GitHub Actions para gerar e anexar o APK
 - [x] Atualizar README com instruções e link de download do APK
 - [ ] Criar checkpoint final antes da publicação
-- [ ] Criar repositório GitHub privado e publicar o código do TRENNIX
+- [x] Criar repositório GitHub público e publicar o código do TRENNIX
 
-- [ ] Criar repositório GitHub do TRENNIX e enviar o código
-- [ ] Atualizar o README com o endereço real do repositório e o link da release APK
-- [ ] Validar o workflow de release Android no GitHub Actions
+- [x] Criar repositório GitHub do TRENNIX e enviar o código
+- [x] Atualizar o README com o endereço real do repositório e o link da release APK
+- [x] Validar o workflow de release Android no GitHub Actions
