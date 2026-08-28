@@ -35,4 +35,4 @@
 - [x] Adicionar campo funcional para chave da IA com armazenamento seguro
 - [x] Adaptar o fluxo do Chat IA conforme referência do Forja
 - [x] Tornar preferências funcionais e persistentes
-- [ ] Atualizar README, GitHub e link da nova release APK
+- [x] Atualizar README, GitHub e link da nova release APK
