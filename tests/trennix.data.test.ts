@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { exercises, getExercise, todayWorkout, weeklyPlan } from "@/lib/trennix/data";
+import { exercises, getExercise, todayWorkout, weeklyPlan } from "../lib/trennix/data";
 
 describe("TRENNIX training data", () => {
   it("returns an exercise by id and preserves its training prescription", () => {
