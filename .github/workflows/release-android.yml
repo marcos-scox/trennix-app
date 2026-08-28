@@ -6,11 +6,11 @@ on:
       release_tag:
         description: "Tag da release que receberá o APK"
         required: true
-        default: "v1.2.0"
+        default: "v1.3.0"
       release_name:
         description: "Nome público da release"
         required: true
-        default: "TRENNIX v1.2.0 — Android"
+        default: "TRENNIX v1.3.0 — Android"
 
 permissions:
   contents: write

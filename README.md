@@ -6,7 +6,7 @@ O [Forja](https://github.com/marcos-scox/forja-app) foi estudado somente como re
 
 ## Como montar um treino
 
-Abra **Biblioteca** e escolha um dos quatro grupos: **Peito, Perna, Costa ou Braço**. Na lista do grupo, toque no botão `+` do exercício desejado. O TRENNIX mostra os dias da semana; escolha o dia e o exercício será acumulado na agenda daquele dia. Você pode repetir o processo para montar uma sessão com quantos exercícios quiser.
+Abra **Biblioteca** e escolha entre duas seções: **Treinos em casa** ou **Treinos na academia**. Cada seção oferece seis treinos completos. Abra um card para ver seus exercícios, séries e repetições; depois escolha um dia da semana para adicionar o treino à Agenda.
 
 A **Agenda** usa o dia real do aparelho para destacar o dia atual e mostra os exercícios adicionados pelo usuário. O Início acompanha essa agenda; quando não existe treino para hoje, apresenta o atalho para montar um novo.
 
@@ -22,9 +22,9 @@ Para usar o **Chat IA**, abra Configurações, escolha um provedor, selecione um
 
 A versão atual está disponível na release:
 
-[**Baixar TRENNIX v1.2.0 — APK Android**](https://github.com/marcos-scox/trennix-app/releases/download/v1.2.0/TRENNIX-v1.2.0.apk)
+[**Baixar TRENNIX v1.3.0 — APK Android**](https://github.com/marcos-scox/trennix-app/releases/download/v1.3.0/TRENNIX-v1.3.0.apk)
 
-Também é possível abrir a [página da release v1.2.0](https://github.com/marcos-scox/trennix-app/releases/tag/v1.2.0). Para versões futuras, abra **Actions**, selecione **Gerar APK Android nativo**, clique em **Run workflow** e informe uma nova tag. O workflow valida TypeScript e testes, gera o projeto Android e anexa o APK à release.
+Também é possível abrir a [página da release v1.3.0](https://github.com/marcos-scox/trennix-app/releases/tag/v1.3.0). Para versões futuras, abra **Actions**, selecione **Gerar APK Android nativo**, clique em **Run workflow** e informe uma nova tag. O workflow valida TypeScript e testes, gera o projeto Android e anexa o APK à release.
 
 > Para instalar um APK fora da Play Store, o Android pode solicitar autorização para instalar aplicativos de fontes desconhecidas.
 
@@ -44,11 +44,11 @@ O projeto usa Expo SDK 54, React Native, Expo Router, NativeWind, AsyncStorage e
 
 | Caminho | Responsabilidade |
 |---|---|
-| `app/(tabs)/library.tsx` | Categorias musculares, exercícios e escolha do dia |
+| `app/(tabs)/library.tsx` | Treinos Casa/Academia, exercícios e escolha do dia |
 | `app/(tabs)/agenda.tsx` | Agenda dinâmica baseada no dia real |
 | `app/(tabs)/settings.tsx` | Perfil, foto, preferências e chave da IA |
 | `app/(tabs)/coach.tsx` | Conversa com o treinador IA |
 | `lib/trennix/store.tsx` | Estado e persistência local |
-| `lib/trennix/ai.ts` | Cliente Groq e armazenamento seguro da chave |
+| `lib/trennix/ai.ts` | Clientes de IA e armazenamento seguro da chave |
 | `.github/workflows/release-android.yml` | Build e publicação do APK |
 | `design.md` | Decisões de interface e fluxos |

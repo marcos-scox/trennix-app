@@ -49,3 +49,11 @@
 - [x] Adicionar limpeza total dos dados locais nas Configurações
 - [ ] Criar testes para persistência, agenda e limpeza
 - [x] Atualizar README, GitHub e link da nova release APK
+
+## Versão 1.3 — biblioteca Casa e Academia
+
+- [x] Criar seção Treinos em casa com 6 treinos completos
+- [x] Criar seção Treinos na academia com 6 treinos completos
+- [x] Exibir os exercícios de cada treino em detalhe
+- [x] Permitir adicionar exercícios dos treinos à Agenda por dia
+- [x] Atualizar README, GitHub e link da nova release APK
