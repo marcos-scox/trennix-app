@@ -12,9 +12,9 @@ Os dados de demonstração estão organizados em `lib/trennix/data.ts`. O primei
 
 ## Baixar APK Android
 
-O APK será anexado a uma release pública deste repositório pelo workflow **Gerar APK Android nativo**. Depois que a primeira release for criada, substitua o endereço abaixo pelo link direto disponibilizado pelo GitHub:
+O APK será anexado a uma release pública deste repositório pelo workflow **Gerar APK Android nativo**. A primeira release será criada pelo workflow do GitHub Actions e ficará disponível neste endereço:
 
-[**Baixar o APK TRENNIX**](https://github.com/SEU_USUARIO/trennix-app/releases/latest)
+[**Baixar o APK TRENNIX**](https://github.com/marcos-scox/trennix-app/releases/latest)
 
 Para gerar uma nova versão, abra **Actions**, selecione **Gerar APK Android nativo**, clique em **Run workflow** e informe a tag da release. O workflow valida o TypeScript e os testes, gera o projeto Android e publica o APK na release escolhida.
 
