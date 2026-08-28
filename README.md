@@ -1,26 +1,34 @@
 # TRENNIX
 
-O **TRENNIX** é um aplicativo Android de academia para organizar treinos de força, registrar séries, acompanhar progresso e consultar uma biblioteca de exercícios. A experiência foi desenhada a partir da referência visual enviada, com interface escura, verde ácido e navegação inferior compacta.
+O **TRENNIX** é um aplicativo Android de academia para você montar seus próprios treinos, escolher em quais dias treinar, registrar séries e conversar com um treinador IA opcional. O aplicativo começa sem treinos, sem histórico e sem progresso preenchidos.
 
-O repositório [Forja](https://github.com/marcos-scox/forja-app) foi estudado exclusivamente como referência técnica de Expo/React Native, navegação, armazenamento local e automação de APK. O Forja original não foi alterado e o TRENNIX não é uma cópia de seu conteúdo.
+O [Forja](https://github.com/marcos-scox/forja-app) foi estudado somente como referência técnica de Expo/React Native, navegação, armazenamento seguro e workflow de APK. O repositório original não é alterado.
 
-## Recursos atuais
+## Como montar um treino
 
-O aplicativo inclui Início com treino do dia, progresso semanal e próximo treino; Biblioteca com busca e filtros; Agenda semanal; Treino ativo com registro de carga, séries e repetições; Histórico com resumo de volume; Chat IA demonstrativo; e Configurações locais.
+Abra **Biblioteca** e escolha um dos quatro grupos: **Peito, Perna, Costa ou Braço**. Na lista do grupo, toque no botão `+` do exercício desejado. O TRENNIX mostra os dias da semana; escolha o dia e o exercício será acumulado na agenda daquele dia. Você pode repetir o processo para montar uma sessão com quantos exercícios quiser.
 
-Os dados de demonstração estão organizados em `lib/trennix/data.ts`. O primeiro escopo funciona localmente e não exige conta, servidor ou chave de API.
+A **Agenda** usa o dia real do aparelho para destacar o dia atual e mostra os exercícios adicionados pelo usuário. O Início acompanha essa agenda; quando não existe treino para hoje, apresenta o atalho para montar um novo.
+
+## Perfil e preferências
+
+Em **Configurações**, o cartão de conta foi removido. O usuário pode editar nome, idade, altura, peso e selecionar uma foto da galeria. Unidades, idioma e lembretes são preferências locais persistentes. O perfil, a agenda e as preferências ficam no aparelho e começam vazios.
+
+## Chat IA
+
+Para usar o **Chat IA**, abra Configurações, cole sua chave Groq e salve. A chave é armazenada no Android usando o armazenamento seguro do sistema; ela não é enviada para o repositório GitHub. O chat usa o modelo compatível `llama-3.3-70b-versatile` e envia ao treinador apenas a pergunta e um contexto básico do perfil e da agenda. Sem chave, o aplicativo informa como configurar a IA.
 
 ## Baixar APK Android
 
-O APK será anexado a uma release deste repositório público pelo workflow **Gerar APK Android nativo**. A primeira release será criada pelo workflow do GitHub Actions e ficará disponível neste endereço:
+A versão atual está disponível na release:
 
-[**Baixar o APK TRENNIX**](https://github.com/marcos-scox/trennix-app/releases/latest)
+[**Baixar TRENNIX v1.1.0 — APK Android**](https://github.com/marcos-scox/trennix-app/releases/download/v1.1.0/TRENNIX-v1.1.0.apk)
 
-Para gerar uma nova versão, abra **Actions**, selecione **Gerar APK Android nativo**, clique em **Run workflow** e informe a tag da release. O workflow valida o TypeScript e os testes, gera o projeto Android e publica o APK na release escolhida.
+Também é possível abrir a [página da release v1.1.0](https://github.com/marcos-scox/trennix-app/releases/tag/v1.1.0). Para versões futuras, abra **Actions**, selecione **Gerar APK Android nativo**, clique em **Run workflow** e informe uma nova tag. O workflow valida TypeScript e testes, gera o projeto Android e anexa o APK à release.
 
-> No Android, pode ser necessário permitir a instalação de aplicativos de fontes desconhecidas para instalar um APK de teste baixado fora da Play Store.
+> Para instalar um APK fora da Play Store, o Android pode solicitar autorização para instalar aplicativos de fontes desconhecidas.
 
-## Desenvolvimento local
+## Desenvolvimento
 
 ```bash
 pnpm install
@@ -30,20 +38,17 @@ pnpm lint
 pnpm test
 ```
 
-O app usa Expo SDK 54, React Native, Expo Router, NativeWind e armazenamento local. O projeto está configurado para portrait e possui um pacote Android próprio gerado pelo template.
+O projeto usa Expo SDK 54, React Native, Expo Router, NativeWind, AsyncStorage e SecureStore. O app é portrait-first e não exige conta ou servidor para montar treinos localmente.
 
 ## Estrutura principal
 
 | Caminho | Responsabilidade |
 |---|---|
-| `app/(tabs)` | Telas de Início, Biblioteca, Agenda, Chat IA, Configurações e Histórico |
-| `app/workout.tsx` | Fluxo de treino ativo e registro de séries |
-| `app/schedule.tsx` | Agenda completa acessível pelo Início e pela aba Agenda |
-| `components/trennix-ui.tsx` | Paleta, cartões, botões e componentes compartilhados |
-| `lib/trennix/data.ts` | Tipos e dados locais de exercícios, treinos e histórico |
-| `.github/workflows/release-android.yml` | Validação, build e publicação do APK |
-| `design.md` | Plano de interface e decisões de experiência |
-
-## Licença
-
-Este projeto é distribuído conforme a licença definida pelo proprietário do repositório.
+| `app/(tabs)/library.tsx` | Categorias musculares, exercícios e escolha do dia |
+| `app/(tabs)/agenda.tsx` | Agenda dinâmica baseada no dia real |
+| `app/(tabs)/settings.tsx` | Perfil, foto, preferências e chave da IA |
+| `app/(tabs)/coach.tsx` | Conversa com o treinador IA |
+| `lib/trennix/store.tsx` | Estado e persistência local |
+| `lib/trennix/ai.ts` | Cliente Groq e armazenamento seguro da chave |
+| `.github/workflows/release-android.yml` | Build e publicação do APK |
+| `design.md` | Decisões de interface e fluxos |

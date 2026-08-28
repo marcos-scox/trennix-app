@@ -23,3 +23,16 @@
 - [x] Criar repositório GitHub do TRENNIX e enviar o código
 - [x] Atualizar o README com o endereço real do repositório e o link da release APK
 - [x] Validar o workflow de release Android no GitHub Actions
+
+## Versão personalizável — solicitação do usuário
+
+- [x] Zerar treinos, progresso, histórico e agenda demonstrativos
+- [x] Reorganizar Biblioteca em cards de Peito, Perna, Costa e Braço
+- [x] Abrir lista de exercícios por grupo muscular
+- [x] Permitir adicionar exercício/treino à agenda escolhendo dia da semana
+- [x] Tornar Agenda dinâmica com base no dia real da semana
+- [x] Remover cartão de conta e criar perfil local com nome, idade, altura, peso e foto
+- [x] Adicionar campo funcional para chave da IA com armazenamento seguro
+- [x] Adaptar o fluxo do Chat IA conforme referência do Forja
+- [x] Tornar preferências funcionais e persistentes
+- [ ] Atualizar README, GitHub e link da nova release APK

@@ -9,10 +9,10 @@ describe("TRENNIX training data", () => {
     expect(exercise.reps).toBe("8–10");
   });
 
-  it("keeps the weekly plan ordered and marks today's workout", () => {
-    expect(weeklyPlan).toHaveLength(5);
-    expect(weeklyPlan[0].title).toBe(todayWorkout.title);
-    expect(weeklyPlan[0].done).toBe(true);
+  it("starts with an empty weekly plan and no default workout", () => {
+    expect(weeklyPlan).toHaveLength(0);
+    expect(todayWorkout.title).toBe("Nenhum treino criado");
+    expect(todayWorkout.exercises).toHaveLength(0);
   });
 
   it("has a searchable exercise catalog with muscle groups", () => {
