@@ -17,7 +17,7 @@
 - [x] Validar TypeScript, lint e testes
 - [x] Preparar workflow do GitHub Actions para gerar e anexar o APK
 - [x] Atualizar README com instruções e link de download do APK
-- [ ] Criar checkpoint final antes da publicação
+- [x] Criar checkpoint final antes da publicação
 - [x] Criar repositório GitHub público e publicar o código do TRENNIX
 
 - [x] Criar repositório GitHub do TRENNIX e enviar o código
@@ -39,13 +39,13 @@
 
 ## Versão 1.2 — persistência, agenda e IA
 
-- [ ] Corrigir persistência local de perfil, agenda, preferências e treinos no armazenamento do aparelho
-- [ ] Persistir cada série, carga, repetição e sessão concluída
-- [ ] Permitir clicar em qualquer dia da semana e visualizar o treino daquele dia
-- [ ] Tornar o botão Ver agenda funcional
-- [ ] Implementar lembrete de treino com permissão e notificação local
-- [ ] Adicionar provedores ChatGPT, Groq, Manus IA, Gemini, Claude IA e DeepSeek
-- [ ] Permitir escolher modelos por provedor
-- [ ] Adicionar limpeza total dos dados locais nas Configurações
+- [x] Corrigir persistência local de perfil, agenda, preferências e treinos no armazenamento do aparelho
+- [x] Persistir cada série, carga, repetição e sessão concluída
+- [x] Permitir clicar em qualquer dia da semana e visualizar o treino daquele dia
+- [x] Tornar o botão Ver agenda funcional
+- [x] Implementar lembrete de treino com permissão e notificação local
+- [x] Adicionar provedores ChatGPT, Groq, Manus IA, Gemini, Claude IA e DeepSeek
+- [x] Permitir escolher modelos por provedor
+- [x] Adicionar limpeza total dos dados locais nas Configurações
 - [ ] Criar testes para persistência, agenda e limpeza
-- [ ] Atualizar README, GitHub e link da nova release APK
+- [x] Atualizar README, GitHub e link da nova release APK
