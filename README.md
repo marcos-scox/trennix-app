@@ -12,7 +12,7 @@ Os dados de demonstração estão organizados em `lib/trennix/data.ts`. O primei
 
 ## Baixar APK Android
 
-O APK será anexado a uma release pública deste repositório pelo workflow **Gerar APK Android nativo**. A primeira release será criada pelo workflow do GitHub Actions e ficará disponível neste endereço:
+O APK será anexado a uma release deste repositório público pelo workflow **Gerar APK Android nativo**. A primeira release será criada pelo workflow do GitHub Actions e ficará disponível neste endereço:
 
 [**Baixar o APK TRENNIX**](https://github.com/marcos-scox/trennix-app/releases/latest)
 
