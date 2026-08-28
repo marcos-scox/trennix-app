@@ -1,0 +1,21 @@
+# Project TODO
+
+- [x] Estudar o repositório Forja sem alterar o projeto original
+- [x] Definir a arquitetura de referência Expo/React Native e o fluxo de APK via GitHub Actions
+- [x] Documentar telas, fluxos e identidade visual do TRENNIX em design.md
+- [x] Substituir o template inicial pela navegação do TRENNIX
+- [x] Implementar a tela Início com treino do dia e progresso semanal
+- [x] Implementar a Biblioteca com busca, filtros e detalhes de exercícios
+- [x] Implementar a Agenda semanal com treinos planejados
+- [x] Implementar o Treino ativo com séries, carga, repetições, descanso e conclusão
+- [x] Implementar Histórico e resumo de sessões com persistência local
+- [x] Implementar o Chat IA demonstrativo sem exigir conta ou chave externa
+- [x] Implementar Configurações locais e preferências
+- [x] Criar logo e ícones próprios do TRENNIX
+- [x] Atualizar tema, nome, slug e configuração Android do aplicativo
+- [x] Criar testes unitários para métricas e persistência local
+- [x] Validar TypeScript, lint e testes
+- [x] Preparar workflow do GitHub Actions para gerar e anexar o APK
+- [x] Atualizar README com instruções e link de download do APK
+- [ ] Criar checkpoint final antes da publicação
+- [ ] Criar repositório GitHub privado e publicar o código do TRENNIX
