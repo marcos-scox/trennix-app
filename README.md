@@ -6,7 +6,7 @@ O [Forja](https://github.com/marcos-scox/forja-app) foi estudado somente como re
 
 ## Como montar um treino
 
-Abra **Biblioteca** e escolha entre duas seções: **Treinos em casa** ou **Treinos na academia**. Cada seção oferece seis treinos completos. Abra um card para ver seus exercícios, séries e repetições; depois escolha um dia da semana para adicionar o treino à Agenda.
+Abra **Biblioteca** e escolha entre duas seções: **Treinos em casa** ou **Treinos na academia**. Toque em **Em casa** para exibir somente os seis treinos de casa, ou em **Academia** para exibir somente os seis treinos da academia. Toque novamente no ambiente selecionado para voltar a ver as duas seções. Abra um card para ver seus exercícios, séries e repetições; depois escolha um dia da semana para adicionar o treino à Agenda.
 
 A **Agenda** usa o dia real do aparelho para destacar o dia atual e mostra os exercícios adicionados pelo usuário. O Início acompanha essa agenda; quando não existe treino para hoje, apresenta o atalho para montar um novo.
 
@@ -22,9 +22,9 @@ Para usar o **Chat IA**, abra Configurações, escolha um provedor, selecione um
 
 A versão atual está disponível na release:
 
-[**Baixar TRENNIX v1.3.0 — APK Android**](https://github.com/marcos-scox/trennix-app/releases/download/v1.3.0/TRENNIX-v1.3.0.apk)
+[**Baixar TRENNIX v1.4.0 — APK Android**](https://github.com/marcos-scox/trennix-app/releases/download/v1.4.0/TRENNIX-v1.4.0.apk)
 
-Também é possível abrir a [página da release v1.3.0](https://github.com/marcos-scox/trennix-app/releases/tag/v1.3.0). Para versões futuras, abra **Actions**, selecione **Gerar APK Android nativo**, clique em **Run workflow** e informe uma nova tag. O workflow valida TypeScript e testes, gera o projeto Android e anexa o APK à release.
+Também é possível abrir a [página da release v1.4.0](https://github.com/marcos-scox/trennix-app/releases/tag/v1.4.0). Para versões futuras, abra **Actions**, selecione **Gerar APK Android nativo**, clique em **Run workflow** e informe uma nova tag. O workflow valida TypeScript e testes, gera o projeto Android e anexa o APK à release.
 
 > Para instalar um APK fora da Play Store, o Android pode solicitar autorização para instalar aplicativos de fontes desconhecidas.
 

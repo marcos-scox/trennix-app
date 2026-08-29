@@ -57,3 +57,10 @@
 - [x] Exibir os exercícios de cada treino em detalhe
 - [x] Permitir adicionar exercícios dos treinos à Agenda por dia
 - [x] Atualizar README, GitHub e link da nova release APK
+
+## Versão 1.4 — filtro de ambiente na Biblioteca
+
+- [x] Exibir apenas os treinos de casa ao selecionar Em casa
+- [x] Exibir apenas os treinos de academia ao selecionar Academia
+- [x] Permitir trocar o ambiente sem perder o fluxo de montagem da Agenda
+- [x] Atualizar README, GitHub e link da nova release APK
