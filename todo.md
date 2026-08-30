@@ -73,4 +73,4 @@
 - [x] Criar 3 treinos diferentes para cada grupo em cada ambiente
 - [x] Abrir a lista de exercícios do treino selecionado
 - [x] Adicionar o treino selecionado à Agenda escolhendo o dia
-- [ ] Atualizar README, GitHub e link da nova release APK
+- [x] Atualizar README, GitHub e link da nova release APK
