@@ -64,3 +64,13 @@
 - [x] Exibir apenas os treinos de academia ao selecionar Academia
 - [x] Permitir trocar o ambiente sem perder o fluxo de montagem da Agenda
 - [x] Atualizar README, GitHub e link da nova release APK
+
+## Versão 1.5 — biblioteca em três níveis
+
+- [x] Criar seleção inicial entre Treino de casa e Treino de academia
+- [x] Exibir somente os grupos musculares do ambiente escolhido
+- [x] Criar Peito, Costas, Braços e Pernas dentro de cada ambiente
+- [x] Criar 3 treinos diferentes para cada grupo em cada ambiente
+- [x] Abrir a lista de exercícios do treino selecionado
+- [x] Adicionar o treino selecionado à Agenda escolhendo o dia
+- [ ] Atualizar README, GitHub e link da nova release APK
