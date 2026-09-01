@@ -74,3 +74,15 @@
 - [x] Abrir a lista de exercícios do treino selecionado
 - [x] Adicionar o treino selecionado à Agenda escolhendo o dia
 - [x] Atualizar README, GitHub e link da nova release APK
+
+## Versão 1.6 — catálogo completo de academia por unidade
+
+- [x] Manter Casa como sessão separada da Academia
+- [x] Criar unidade Pernas com Quadríceps, Posterior de coxa, Glúteos e Panturrilha
+- [x] Criar unidade Peito com a subunidade Peitoral
+- [x] Criar unidade Costas com Dorsais e Lombar
+- [x] Criar unidade Braços com Bíceps, Tríceps e Antebraço
+- [x] Criar unidade Ombros com Deltoide anterior
+- [x] Inserir todos os exercícios fornecidos nas subunidades corretas
+- [x] Permitir selecionar exercício/treino por unidade e adicionar à Agenda
+- [x] Atualizar README, GitHub e link da nova release APK
