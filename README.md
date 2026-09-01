@@ -6,7 +6,7 @@ O [Forja](https://github.com/marcos-scox/forja-app) foi estudado somente como re
 
 ## Como montar um treino
 
-Abra **Biblioteca** e escolha uma das duas sessões: **Treino de casa** ou **Treino de academia**. Em ambas, escolha uma unidade, depois a subunidade e o exercício. A sessão Casa inclui Peito, Costas, Braços, Ombros, Pernas, Abdômen e Cardio/Corpo inteiro; a sessão Academia inclui Pernas, Peito, Costas, Braços e Ombros. As listas longas podem ser roladas até o último exercício. Cada exercício pode ser aberto para escolher o dia em que será adicionado à Agenda.
+Abra **Biblioteca** e escolha uma das duas sessões: **Treino de casa** ou **Treino de academia**. Em ambas, escolha uma unidade, depois a subunidade e o exercício; os catálogos são separados e nenhum exercício de Casa aparece em Academia ou vice-versa. A sessão Casa inclui Peito, Costas, Braços, Ombros, Pernas, Abdômen e Cardio/Corpo inteiro; a sessão Academia inclui Pernas, Peito, Costas, Braços e Ombros. As listas longas podem ser roladas até o último exercício. O botão voltar retorna um nível por vez e preserva a seleção atual dentro da Biblioteca. Cada exercício pode ser aberto para escolher o dia em que será adicionado à Agenda.
 
 A **Agenda** usa o dia real do aparelho para destacar o dia atual e mostra os exercícios adicionados pelo usuário. O Início acompanha essa agenda; quando não existe treino para hoje, apresenta o atalho para montar um novo.
 
@@ -22,9 +22,9 @@ Para usar o **Chat IA**, abra Configurações, escolha um provedor, selecione um
 
 A versão atual está disponível na release:
 
-[**Baixar TRENNIX v1.8.0 — APK Android**](https://github.com/marcos-scox/trennix-app/releases/download/v1.8.0/TRENNIX-v1.8.0.apk)
+[**Baixar TRENNIX v1.9.0 — APK Android**](https://github.com/marcos-scox/trennix-app/releases/download/v1.9.0/TRENNIX-v1.9.0.apk)
 
-Também é possível abrir a [página da release v1.8.0](https://github.com/marcos-scox/trennix-app/releases/tag/v1.8.0). Para versões futuras, abra **Actions**, selecione **Gerar APK Android nativo**, clique em **Run workflow** e informe uma nova tag. O workflow valida TypeScript e testes, gera o projeto Android e anexa o APK à release.
+Também é possível abrir a [página da release v1.9.0](https://github.com/marcos-scox/trennix-app/releases/tag/v1.9.0). Para versões futuras, abra **Actions**, selecione **Gerar APK Android nativo**, clique em **Run workflow** e informe uma nova tag. O workflow valida TypeScript e testes, gera o projeto Android e anexa o APK à release.
 
 > Para instalar um APK fora da Play Store, o Android pode solicitar autorização para instalar aplicativos de fontes desconhecidas.
 

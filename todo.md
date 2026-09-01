@@ -106,3 +106,13 @@
 - [x] Permitir selecionar exercícios de Casa por unidade e adicionar à Agenda
 - [x] Manter o fluxo Academia por unidade, subunidade e exercício
 - [x] Atualizar README, GitHub e link da nova release APK
+
+## Versão 1.9 — separação de ambientes e navegação
+
+- [x] Garantir que a sessão Casa use somente exercícios de Casa
+- [x] Garantir que a sessão Academia use somente exercícios de Academia
+- [x] Impedir mistura de exercícios duplicados entre os ambientes
+- [x] Corrigir voltar para retornar exatamente um nível da Biblioteca
+- [x] Preservar o estado da Biblioteca enquanto o usuário navega entre níveis
+- [x] Sair para a tela inicial somente ao voltar a partir da seleção de sessão
+- [x] Atualizar README, GitHub e link da nova release APK

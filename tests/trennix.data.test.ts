@@ -19,4 +19,9 @@ describe("TRENNIX training data", () => {
     expect(exercises.length).toBeGreaterThan(5);
     expect(new Set(exercises.map((item) => item.muscle)).size).toBeGreaterThan(3);
   });
+
+  it("keeps home and gym exercises in separate environments", () => {
+    expect(exercises.filter((item) => item.id.startsWith("home-")).every((item) => item.environment === "Casa")).toBe(true);
+    expect(exercises.filter((item) => item.id.startsWith("gym-")).every((item) => item.environment === "Academia")).toBe(true);
+  });
 });
