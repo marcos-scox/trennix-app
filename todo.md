@@ -86,3 +86,23 @@
 - [x] Inserir todos os exercícios fornecidos nas subunidades corretas
 - [x] Permitir selecionar exercício/treino por unidade e adicionar à Agenda
 - [x] Atualizar README, GitHub e link da nova release APK
+
+## Versão 1.7 — catálogo de Casa por unidade e listas roláveis
+
+- [x] Corrigir a rolagem das listas longas até o último exercício
+- [x] Organizar Casa por Peito, Costas, Braços, Ombros, Pernas, Abdômen e Cardio/Corpo inteiro
+- [x] Criar subunidades de Casa para os grupos que possuem divisões
+- [x] Inserir todos os exercícios domésticos fornecidos nas subunidades corretas
+- [x] Permitir selecionar exercícios de Casa por unidade e adicionar à Agenda
+- [x] Manter o fluxo Academia por unidade, subunidade e exercício
+- [x] Atualizar README, GitHub e link da nova release APK
+
+## Versão 1.8 — catálogo completo de Casa e listas roláveis
+
+- [x] Corrigir a rolagem das listas longas até o último exercício
+- [x] Organizar Casa por Peito, Costas, Braços, Ombros, Pernas, Abdômen e Cardio/Corpo inteiro
+- [x] Criar subunidades de Casa para os grupos que possuem divisões
+- [x] Inserir todos os exercícios domésticos fornecidos nas subunidades corretas
+- [x] Permitir selecionar exercícios de Casa por unidade e adicionar à Agenda
+- [x] Manter o fluxo Academia por unidade, subunidade e exercício
+- [x] Atualizar README, GitHub e link da nova release APK
