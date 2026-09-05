@@ -1,6 +1,6 @@
 export type MuscleGroup="Peito"|"Pernas"|"Costas"|"Braços"|"Ombros"|"Abdômen"|"Cardio / Corpo inteiro";
 export type Environment="Casa"|"Academia";
-export type Exercise={id:string;name:string;muscle:MuscleGroup;subunit?:string;equipment:string;sets:number;reps:string;level:"Base"|"Intermediário"|"Avançado";cue:string;environment?:Environment};
+export type Exercise={id:string;name:string;muscle:MuscleGroup;subunit?:string;equipment:string;sets:number;reps:string;level:"Base"|"Intermediário"|"Avançado";cue:string;environment?:Environment;imageUrl?:string};
 export type Workout={id:string;title:string;subtitle:string;duration:string;exerciseCount:number;accent:string;exercises:string[];kind:Environment;group:MuscleGroup};
 const e=(id:string,name:string,muscle:MuscleGroup,equipment:string,subunit?:string):Exercise=>({id,name,muscle,subunit,equipment,sets:3,reps:"8–12",level:"Base",cue:"Execute com controle, amplitude confortável e postura estável."});
 const legacy:Exercise[]=[
@@ -58,7 +58,19 @@ e("home-abdominal","Abdominal tradicional","Abdômen","Peso corporal","Abdômen"
 e("home-polichinelo","Polichinelo","Cardio / Corpo inteiro","Peso corporal","Cardio / Corpo inteiro"),e("home-polichinelo-lateral","Polichinelo lateral","Cardio / Corpo inteiro","Peso corporal","Cardio / Corpo inteiro"),e("home-corrida-estacionaria","Corrida estacionária","Cardio / Corpo inteiro","Peso corporal","Cardio / Corpo inteiro"),e("home-joelhos-altos","Corrida com joelhos altos","Cardio / Corpo inteiro","Peso corporal","Cardio / Corpo inteiro"),e("home-butt-kicks","Butt Kicks","Cardio / Corpo inteiro","Peso corporal","Cardio / Corpo inteiro"),e("home-burpee","Burpee","Cardio / Corpo inteiro","Peso corporal","Cardio / Corpo inteiro"),e("home-burpee-salto","Burpee com salto","Cardio / Corpo inteiro","Peso corporal","Cardio / Corpo inteiro"),e("home-skater","Skater","Cardio / Corpo inteiro","Peso corporal","Cardio / Corpo inteiro"),e("home-afundo-salto","Afundo com salto","Cardio / Corpo inteiro","Peso corporal","Cardio / Corpo inteiro"),e("home-corda","Corda","Cardio / Corpo inteiro","Corda","Cardio / Corpo inteiro"),e("home-shadow-boxing","Shadow Boxing","Cardio / Corpo inteiro","Peso corporal","Cardio / Corpo inteiro"),e("home-bear-crawl","Bear Crawl","Cardio / Corpo inteiro","Peso corporal","Cardio / Corpo inteiro"),e("home-crab-walk","Crab Walk","Cardio / Corpo inteiro","Peso corporal","Cardio / Corpo inteiro"),e("home-inchworm","Inchworm","Cardio / Corpo inteiro","Peso corporal","Cardio / Corpo inteiro")
 ];
 legacy.forEach(item=>{item.environment="Casa"});academy.forEach(item=>{item.environment="Academia"});home.forEach(item=>{item.environment="Casa"});
-export const exercises:Exercise[]=[...legacy,...academy,...home];
+const imageByExerciseId:Record<string,string>={
+  "gym-squat":"/manus-storage/trennix-gym-lower_dcee5b23.png",
+  "gym-bench-bar":"/manus-storage/trennix-gym-upper_3fcc8c25.png",
+  "home-flexao":"/manus-storage/trennix-home-push_c0ac47c0.png",
+  "home-remada-mochila":"/manus-storage/trennix-home-pull_3ccd4eb6.png",
+  "home-prancha":"/manus-storage/trennix-core_b1386649.png",
+  "gym-deadlift":"/manus-storage/trennix-gym-deadlift_4b266701.png",
+  "gym-front-pulldown":"/manus-storage/trennix-gym-lat-pulldown_e48b58c0.png",
+  "home-afundo":"/manus-storage/trennix-home-lunge_435d4bd4.png",
+  "home-burpee":"/manus-storage/trennix-home-burpee_1a432e4f.png",
+  "home-pike":"/manus-storage/trennix-home-pike_27bec291.png",
+};
+export const exercises:Exercise[]=[...legacy,...academy,...home].map(item=>({...item,imageUrl:imageByExerciseId[item.id]}));
 export const homeUnits:{name:MuscleGroup;subunits:string[];caption:string}[]=[{name:"Peito",subunits:["Peitoral"],caption:"Flexões e variações de peito"},{name:"Costas",subunits:["Dorsais"],caption:"Costas, puxadas e postura"},{name:"Braços",subunits:["Bíceps","Tríceps","Antebraço"],caption:"Braços e força de pegada"},{name:"Ombros",subunits:["Deltoides"],caption:"Desenvolvimento e estabilidade"},{name:"Pernas",subunits:["Quadríceps","Posterior de coxa","Glúteos","Panturrilha"],caption:"Pernas, glúteos e panturrilhas"},{name:"Abdômen",subunits:["Abdômen"],caption:"Core e estabilidade"},{name:"Cardio / Corpo inteiro",subunits:["Cardio / Corpo inteiro"],caption:"Condicionamento e movimentos completos"}];
 export const academyUnits:{name:MuscleGroup;subunits:string[];caption:string}[]=[{name:"Pernas",subunits:["Quadríceps","Posterior de coxa","Glúteos","Panturrilha"],caption:"Coxas, glúteos e panturrilhas"},{name:"Peito",subunits:["Peitoral"],caption:"Peitoral e movimentos de empurrar"},{name:"Costas",subunits:["Dorsais","Lombar"],caption:"Dorsais, espessura e lombar"},{name:"Braços",subunits:["Bíceps","Tríceps","Antebraço"],caption:"Bíceps, tríceps e antebraço"},{name:"Ombros",subunits:["Deltoide anterior"],caption:"Desenvolvimento e força"}];
 const make=(id:string,title:string,subtitle:string,duration:string,kind:Environment,group:MuscleGroup,ids:string[]):Workout=>({id,title,subtitle,duration,kind,group,exercises:ids,exerciseCount:ids.length,accent:kind==="Casa"?"#A8F238":"#65D66F"});

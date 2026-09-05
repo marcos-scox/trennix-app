@@ -116,3 +116,12 @@
 - [x] Preservar o estado da Biblioteca enquanto o usuário navega entre níveis
 - [x] Sair para a tela inicial somente ao voltar a partir da seleção de sessão
 - [x] Atualizar README, GitHub e link da nova release APK
+
+## Versão 2.0 — imagens de movimento dos exercícios
+
+- [x] Definir grupos visuais de movimentos sem misturar exercícios
+- [x] Criar imagens coerentes para exercícios de Academia
+- [x] Criar imagens coerentes para exercícios de Casa
+- [x] Associar cada exercício à imagem correspondente pelo nome e movimento
+- [x] Exibir imagem na lista e no detalhe do exercício
+- [x] Atualizar README, GitHub e link da nova release APK
