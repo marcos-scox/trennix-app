@@ -3,18 +3,18 @@ import { Pressable, StyleProp, StyleSheet, Text, TextInput, TextInputProps, View
 import { MaterialIcons } from "@expo/vector-icons";
 
 export const palette = {
-  bg: "#F4F7FB",
-  surface: "#FFFFFF",
-  elevated: "#EAF0F8",
-  lime: "#2457FF",
-  green: "#16A085",
-  text: "#14213D",
-  muted: "#68758C",
-  border: "#DCE4F0",
-  orange: "#D99118",
-  red: "#D94F70",
-  violet: "#7C5CFC",
-  navy: "#102A56",
+  bg: "#090C14",
+  surface: "#111827",
+  elevated: "#1A2435",
+  lime: "#4C6FFF",
+  green: "#36B89C",
+  text: "#F4F7FC",
+  muted: "#9AA7BA",
+  border: "#27344A",
+  orange: "#D7A340",
+  red: "#E06A83",
+  violet: "#8A70FF",
+  navy: "#16213A",
 };
 
 export function Card({ children, style }: PropsWithChildren<{ style?: StyleProp<ViewStyle> }>) {
@@ -50,7 +50,7 @@ export function ProgressRing({ value }: { value: number }) {
 }
 
 export const styles = StyleSheet.create({
-  card: { backgroundColor: palette.surface, borderRadius: 20, borderWidth: 1, borderColor: palette.border, padding: 16, shadowColor: "#18315E", shadowOpacity: 0.06, shadowRadius: 16, shadowOffset: { width: 0, height: 8 }, elevation: 2 },
+  card: { backgroundColor: palette.surface, borderRadius: 20, borderWidth: 1, borderColor: palette.border, padding: 16, shadowColor: "#000000", shadowOpacity: 0.06, shadowRadius: 16, shadowOffset: { width: 0, height: 8 }, elevation: 2 },
   sectionHeader: { flexDirection: "row", alignItems: "flex-end", justifyContent: "space-between", marginBottom: 12 },
   eyebrow: { color: palette.lime, fontSize: 11, fontWeight: "800", letterSpacing: 1.2, marginBottom: 3 },
   sectionTitle: { color: palette.text, fontSize: 21, fontWeight: "800", letterSpacing: -0.4 },

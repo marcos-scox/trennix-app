@@ -10,6 +10,25 @@ Abra **Biblioteca** e escolha uma das duas sessões: **Treino de casa** ou **Tre
 
 A **Agenda** usa o dia real do aparelho para destacar o dia atual e mostra os exercícios adicionados pelo usuário. O Início acompanha essa agenda; quando não existe treino para hoje, apresenta o atalho para montar um novo.
 
+## Identidade visual e imagens
+
+A interface usa **preto como base**, cinza azulado para superfícies e bordas, azul moderado para ações principais e roxo apenas como acento. As imagens dos treinos são ilustrações sem pessoas reais. Elas foram importadas para a biblioteca do **Canva** com os nomes `TrainX - ... - no people` e também são servidas por links públicos para que o aplicativo possa exibi-las e permitir o download.
+
+### Downloads das ilustrações
+
+| Treino | Baixar |
+|---|---|
+| Peito | [Baixar ilustração](https://files.manuscdn.com/user_upload_by_module/session_file/310519663971908763/YHlEEtDLvTwdSyRZ.png) |
+| Costas | [Baixar ilustração](https://files.manuscdn.com/user_upload_by_module/session_file/310519663971908763/secgGHOnjrvjBXDp.png) |
+| Braços | [Baixar ilustração](https://files.manuscdn.com/user_upload_by_module/session_file/310519663971908763/QTieDibXAyWMnXGJ.png) |
+| Pernas | [Baixar ilustração](https://files.manuscdn.com/user_upload_by_module/session_file/310519663971908763/FdVrTRZAGczCGyAQ.png) |
+| Cardio / corpo inteiro | [Baixar ilustração](https://files.manuscdn.com/user_upload_by_module/session_file/310519663971908763/SnSoHHuJCqNQjLjQ.png) |
+| Peito em casa | [Baixar ilustração](https://files.manuscdn.com/user_upload_by_module/session_file/310519663971908763/hsJuWUTpexMPKFGx.png) |
+| Costas em casa | [Baixar ilustração](https://files.manuscdn.com/user_upload_by_module/session_file/310519663971908763/ZJKmGqcSDfvvHVrs.png) |
+| Braços em casa | [Baixar ilustração](https://files.manuscdn.com/user_upload_by_module/session_file/310519663971908763/LxjgYcwkRJhncmPn.png) |
+| Pernas em casa | [Baixar ilustração](https://files.manuscdn.com/user_upload_by_module/session_file/310519663971908763/vejksLTgnugxUxdg.png) |
+| Treino iniciante em casa | [Baixar ilustração](https://files.manuscdn.com/user_upload_by_module/session_file/310519663971908763/iYXLIvvPrTnUFqDu.png) |
+
 ## Perfil e preferências
 
 Em **Configurações**, o cartão de conta foi removido. O usuário pode editar nome, idade, altura, peso e selecionar uma foto da galeria. Unidades, idioma e lembretes são preferências locais persistentes. O perfil, a agenda, as preferências e as sessões ficam no aparelho, em arquivo local persistente dentro do armazenamento privado do aplicativo, e começam vazios. O botão **Limpar todos os dados** remove esse arquivo, a chave da IA e os lembretes agendados.
@@ -45,7 +64,7 @@ O projeto usa Expo SDK 54, React Native, Expo Router, NativeWind, AsyncStorage e
 | Caminho | Responsabilidade |
 |---|---|
 | `app/(tabs)/library.tsx` | Sessão, unidade, subunidade, exercícios, imagens instrucionais, rolagem e escolha do dia |
-| `lib/trennix/data.ts` | Catálogo separado de Casa/Academia e associação de imagens por exercício |
+| `lib/trennix/data.ts` | Catálogo separado de Casa/Academia, associação de imagens e links de download |
 | `app/(tabs)/agenda.tsx` | Agenda dinâmica baseada no dia real |
 | `app/(tabs)/settings.tsx` | Perfil, foto, preferências e chave da IA |
 | `app/(tabs)/coach.tsx` | Conversa com o treinador IA |
