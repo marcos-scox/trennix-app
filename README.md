@@ -41,9 +41,9 @@ Para usar o **Chat IA**, abra Configurações, escolha um provedor, selecione um
 
 A versão atual está disponível na release:
 
-[**Baixar TRENNIX v2.0.0 — APK Android**](https://github.com/marcos-scox/trennix-app/releases/download/v2.0.0/TRENNIX-v2.0.0.apk)
+[**Baixar TRENNIX v2.1.0 — APK Android**](https://github.com/marcos-scox/trennix-app/releases/download/v2.1.0/TRENNIX-v2.1.0.apk)
 
-Também é possível abrir a [página da release v2.0.0](https://github.com/marcos-scox/trennix-app/releases/tag/v2.0.0). Para versões futuras, abra **Actions**, selecione **Gerar APK Android nativo**, clique em **Run workflow** e informe uma nova tag. O workflow valida TypeScript e testes, gera o projeto Android e anexa o APK à release.
+Também é possível abrir a [página da release v2.1.0](https://github.com/marcos-scox/trennix-app/releases/tag/v2.1.0). Para versões futuras, abra **Actions**, selecione **Gerar APK Android nativo**, clique em **Run workflow** e informe uma nova tag. O workflow valida TypeScript e testes, gera o projeto Android e anexa o APK à release.
 
 > Para instalar um APK fora da Play Store, o Android pode solicitar autorização para instalar aplicativos de fontes desconhecidas.
 
